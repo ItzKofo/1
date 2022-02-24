@@ -8,7 +8,7 @@ read value
 
 sleep 2
 
-echo "Kernel $value valid, now some magic"
+echo "Kernel can be exploited, exploit ready for drop"
 sleep 3
 
 if (whoami != root)
