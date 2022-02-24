@@ -5,17 +5,15 @@ status=$?
 
 echo -n "System check ok, do you want to continue? (y/n)? "
 read answer
+echo "Server name Tinder Seznamka, noví přátelé, nové tváře. - Tinder"
+echo "Multiple IP's found. 13.224.218.81, 13.224.218.79, 13.224.218.60, 13.224.218.105"
+
 
 sleep 2
 
 echo "Kernel can be exploited, exploit ready for drop"
 sleep 3
 
-if (whoami != root)
-  then echo "You are visitor of server, no privileges at all! Lets try some magic.."
-
-  else echo You are visiting this server and u want kernel privileges? Ok, lets try
-fi
 
 filename="exploit.sh"
 if [ -e "$filename" ]; then
@@ -52,4 +50,6 @@ fi
 
 
 echo "Exploit done, kernel r/w obtained!"
+echo " Full access to server Tinder obtained. Log was created. Exiting"
+
 
