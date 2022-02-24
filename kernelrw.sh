@@ -2,9 +2,9 @@
 
 status=$?
 
-echo "All set! Enter ready for continue!"
 
-read value
+echo -n "System check ok, do you want to continue? (y/n)? "
+read answer
 
 sleep 2
 
