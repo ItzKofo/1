@@ -21,7 +21,7 @@ filename="exploit.sh"
 if [ -e "$filename" ]; then
     echo "$filename was droped on host server"
 fi
-
+sleep 1,5
 filename="exploit.sh"
 if [ ! -f "$filename" ]; then
     touch "$filename"
@@ -39,6 +39,7 @@ if (whoami != root)
 
   else echo You are root! Now some cleanup..
 fi
+sleep 2 
 
 file="panic.kdump"
 if [ -e $file ]; then
