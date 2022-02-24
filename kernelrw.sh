@@ -6,11 +6,20 @@ echo "All set! Enter ready for continue!"
 
 read value
 
+sleep 2
+
 echo "Kernel $value valid, now some magic"
+sleep 3
+
+if (whoami != root)
+  then echo "You are visitor of server, no privileges at all! Lets try some magic.."
+
+  else echo You are visiting this server and u want kernel privileges? Ok, lets try
+fi
 
 filename="exploit.sh"
 if [ -e "$filename" ]; then
-    echo "$filename was droped on host"
+    echo "$filename was droped on host server"
 fi
 
 filename="exploit.sh"
@@ -18,7 +27,7 @@ if [ ! -f "$filename" ]; then
     touch "$filename"
 fi
 if [ -r "$filename" ]; then
-    echo "Can escalate privileges to run $filename"
+    echo "Connected to the payload. $filename"
 else
     echo "Low privileges for it:( Try again $filename"
 fi
@@ -43,7 +52,3 @@ fi
 
 echo "Exploit done, kernel r/w obtained!"
 
-echo -e "Kernel Details: " `uname -smr`
-echo -e "`bash --version`"
-echo -ne "Uptime: "; uptime
-echo -ne "Server time : "; date
