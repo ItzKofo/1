@@ -1,0 +1,9 @@
+ntp1.stratum1.ru
+
+ntp2.stratum1.ru
+
+ntp3.stratum1.ru
+
+ntp4.stratum1.ru
+
+ntp5.stratum1.ru
